@@ -1,93 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Personal Portfolio</title>
-    </head>
-    <body>
-        <header>
-            <h1>My Personal Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </nav>
-            <form>
-                <label for="search">Search:</label>
-                <input type="search" id="search" name="search">
-                <button type="submit">Search</button>
-            </form>
-        </header>
-        <main>
-            <section id="about">
-                <h2>About Me</h2>
-                <img src="images/profile-img.jpg" alt="Profile picture" width="200">
-                <p>
-                    I am Aarya Upreti.
-                    I am a Bachelor of Information Technology student at Model Institution of Technology.
-                    I am interested in learning about technology and developing my skills in the IT field.
-                </p>
-            </section>
-            <section id="skills">
-                <h2>My Skills</h2>
-                <dl>
-                    <dt>Programming Languages</dt>
-                    <dd>Java, Python, C#</dd>
-                    <dt>Database</dt>
-                    <dd>MySQL, MongoDB, Oracle</dd>
-                    <dt>Tools</dt>
-                    <dd>Microsoft Word, Excel, Visual Studio Code, IntelliJ IDEA</dd>
-                    <dt>Web Technologies</dt>
-                    <dd>HTML5, CSS</dd>
-                </dl>
-            </section>
-            <section id="projects">
-                <h2>My Projects</h2>
-                <article>
-                    <h3>Personal Portfolio Website</h3>
-                    <p>
-                        This is a single-page personal portfolio website built using only semantic HTML5
-                        elements. It includes a header with navigation links, an about section with a
-                        profile image, a list of my technical skills, a projects section, and a contact
-                        form. The project helped me understand how to give a web page a clear structure
-                        without using any CSS.
-                    </p>
-                </article>
-                <article>
-                    <h3>Clinic Management System</h3>
-                    <p>
-                        This is a basic clinic management system designed to store and manage patient
-                        information and clinic-related records. It helps staff add, update, and search
-                        patient details in an organized way instead of using paper files. The project
-                        helped me practice database design and programming skills in a practical situation.
-                    </p>
-                </article>
-            </section>
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <form>
-                    <p>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name">
-                    </p>
-                    <p>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
-                    </p>
-                    <p>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" cols="40"></textarea>
-                    </p>
-                    <button type="submit">Submit</button>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2026 My Personal Portfolio</p>
-        </footer>
-    </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aarya Upreti | Portfolio</title>
+<link rel="icon" href="images/logo.jpg" type="image/jpeg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+
+    <div class="logo-container">
+      <a href="#top"><img src="images/logo.jpg" alt="Aarya Upreti logo" width="100"></a>
+    </div>
+
+    <div class="nav-container">
+      <nav>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="search-bar-container">
+      <form class="search-form">
+        <label for="search" class="visually-hidden">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+  </div>
+</header>
+
+<main id="top">
+
+  <section id="about" class="about-container">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I am <strong>Aarya Upreti</strong>, a second-year Bachelor of Information Technology
+        student at Model Institution of Technology.
+      </p>
+      <p>
+        I completed my SEE at Reliance International Academy and my +2 at Global School of
+        Science. These years built my interest in technology and problem solving.
+      </p>
+      <p>
+        So far I have learned programming in Java, Python and C#, and I have worked with
+        databases such as MySQL, MongoDB and Oracle. In this course I am learning web design
+        and development with HTML5 and CSS. I like practical projects, such as my Clinic
+        Management System, and I want to keep improving my skills so I can build a career in
+        the IT field.
+      </p>
+    </div>
+    <img src="images/profile-img.jpg" alt="Profile picture of Aarya Upreti" width="200">
+  </section>
+
+  <section id="skills" class="skills-container">
+    <h2>My Skills</h2>
+    <dl>
+      <dt>Programming Languages</dt>
+      <dd>Java, Python, C#</dd>
+      <dt>Database</dt>
+      <dd>MySQL, MongoDB, Oracle</dd>
+      <dt>Tools</dt>
+      <dd>Microsoft Word, Excel, Visual Studio Code, IntelliJ IDEA</dd>
+      <dt>Web Technologies</dt>
+      <dd>HTML5, CSS</dd>
+    </dl>
+  </section>
+
+  <section id="projects" class="projects-container">
+    <h2>My Projects</h2>
+    <article>
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        This is a single-page personal portfolio website built with semantic HTML5 and styled
+        with custom CSS. It includes a header with a logo, navigation links and a search bar,
+        an about section with a profile image, a list of my technical skills, a projects
+        section, and a contact form. The project helped me understand how to structure a page
+        and then style it with an external stylesheet.
+      </p>
+    </article>
+    <article>
+      <h3>Clinic Management System</h3>
+      <p>
+        This is a basic clinic management system designed to store and manage patient
+        information and clinic-related records. It helps staff add, update, and search
+        patient details in an organized way instead of using paper files. The project
+        helped me practice database design and programming skills in a practical situation.
+      </p>
+    </article>
+  </section>
+  <section id="education" class="education-container">
+    <h2>Education</h2>
+    <article>
+      <h3>Bachelor of Information Technology</h3>
+      <p>Model Institution of Technology</p>
+      <p class="gpa">GPA: 3.60</p>
+    </article>
+    <article>
+      <h3>+2 (Higher Secondary)</h3>
+      <p>Global School of Science</p>
+      <p class="gpa">GPA: 3.40</p>
+    </article>
+    <article>
+      <h3>SEE (Secondary Education Examination)</h3>
+      <p>Reliance International Academy</p>
+      <p class="gpa">GPA: 3.60</p>
+    </article>
+  </section>
+
+<section id="contact" class="contact-container">
+  <h2>Contact Me</h2>
+  <form>
+    <div class="form-row">
+      <div class="form-field">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </div>
+    </div>
+    <div class="form-field">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" cols="40"></textarea>
+    </div>
+    <button type="submit">Submit</button>
+
+  </form>
+</section>
+
+  <section class="find-me-on-container">
+    <h2>Find Me On</h2>
+    <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/aarya-upreti-10a395427/" target="_blank" rel="noopener">LinkedIn</a>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 My Personal Portfolio</p>
+</footer>
+
+</body>
 </html>
